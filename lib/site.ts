@@ -5,13 +5,13 @@ export const ASSETS = {
   logoColor: "/NutriGen_Clinic_Principal.png", // header (fundo claro)
   logoWhite: "/NutriGen_Clinic_Negativa_Branca.png", // footer (fundo escuro)
   symbol: "/apenas_logo_nutrigen.jpg", // favicon / marca d'água
-  hero: "/sporty-senior-woman-with-short-hair-front-view.jpg",
-  manifesto: "/active-senior-woman-smiling-after-workout.jpg",
+  hero: "/active-senior-woman-smiling-after-workout.jpg",
+  manifesto: "/amazing-strong-young-sports-woman-make-sports-stretching-exercises.jpg",
   gallery: [
     "/woman_reflex_exerciced.jpg.avif",
     "/woman_exercite.png",
     "/woan_exercite.jpg",
-    "/amazing-strong-young-sports-woman-make-sports-stretching-exercises.jpg",
+    "/sporty-senior-woman-with-short-hair-front-view.jpg",
   ],
 } as const;
 
