@@ -1,0 +1,13 @@
+.git
+.github
+.claude
+.next
+node_modules
+out
+build
+npm-debug.log*
+.env*
+.DS_Store
+*.pem
+Dockerfile
+README.md

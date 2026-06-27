@@ -3,8 +3,10 @@ import { ASSETS, NAV_LINKS } from "@/lib/site";
 
 export default function Footer() {
   return (
-    <footer className="bg-dna text-mist">
-      <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
+    <footer className="relative bg-dna text-mist">
+      {/* Blended seam from the previous (mist) section into the dark footer */}
+      <div className="pointer-events-none absolute inset-x-0 -top-16 h-16 bg-gradient-to-b from-mist to-dna" />
+      <div className="mx-auto max-w-7xl px-6 py-14 sm:py-16 lg:px-10">
         <div className="flex flex-col items-center text-center">
           <Image
             src={ASSETS.logoWhite}

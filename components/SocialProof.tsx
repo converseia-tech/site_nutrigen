@@ -30,7 +30,10 @@ const BLOCKS: Block[] = [
 
 export default function SocialProof() {
   return (
-    <section id="prova" className="bg-clinical py-24 lg:py-32">
+    <section
+      id="prova"
+      className="bg-gradient-to-b from-white via-white to-mist py-20 sm:py-24 lg:py-32"
+    >
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal className="mx-auto max-w-3xl text-center" stagger>
           <span className="reveal mb-5 inline-block text-[12px] font-semibold uppercase tracking-[0.28em] text-cyan">
@@ -46,8 +49,8 @@ export default function SocialProof() {
         </Reveal>
 
         {BLOCKS.map((block) => (
-          <div key={block.title} className="mt-16">
-            <Reveal className="mb-8" stagger>
+          <div key={block.title} className="mt-12 sm:mt-16">
+            <Reveal className="mb-8 text-center" stagger>
               <h3 className="reveal font-serif text-2xl font-medium text-dna">
                 {block.title}
               </h3>
@@ -57,7 +60,7 @@ export default function SocialProof() {
             </Reveal>
 
             <Reveal
-              className="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3"
+              className="mx-auto grid max-w-4xl grid-cols-1 gap-6 sm:gap-7 md:grid-cols-2"
               stagger
             >
               {block.items.map((item) => (

@@ -7,8 +7,8 @@ import { CONTACT, WHATSAPP_URL } from "@/lib/site";
 
 export default function Location() {
   return (
-    <section id="agendamento" className="bg-mist py-24 lg:py-32">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2 lg:gap-16 lg:px-10">
+    <section id="agendamento" className="bg-mist py-20 sm:py-24 lg:py-32">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 sm:gap-12 lg:grid-cols-2 lg:gap-16 lg:px-10">
         {/* Left — institutional */}
         <Reveal stagger>
           <span className="reveal mb-5 inline-block text-[12px] font-semibold uppercase tracking-[0.28em] text-cyan">
@@ -45,7 +45,7 @@ export default function Location() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
-            className="reveal mt-10 inline-flex animate-pulseSoft items-center gap-3 rounded-full bg-cyan px-8 py-4 text-sm font-bold uppercase tracking-[0.08em] text-white shadow-float"
+            className="reveal mt-10 inline-flex w-full animate-pulseSoft items-center justify-center gap-3 rounded-full bg-cyan px-7 py-4 text-center text-[13px] font-bold uppercase tracking-[0.06em] text-white shadow-float sm:w-auto sm:px-8 sm:text-sm sm:tracking-[0.08em]"
           >
             <WhatsappLogo size={22} weight="fill" />
             Fale com um Assessor de Jornada de Saúde
@@ -62,7 +62,7 @@ export default function Location() {
               height="460"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="block h-[460px] w-full grayscale-[0.35] [filter:grayscale(0.4)_contrast(1.05)_hue-rotate(175deg)_saturate(0.85)]"
+              className="block h-[340px] w-full sm:h-[460px] grayscale-[0.35] [filter:grayscale(0.4)_contrast(1.05)_hue-rotate(175deg)_saturate(0.85)]"
             />
             <div className="pointer-events-none absolute inset-0 bg-nutrigen/5 mix-blend-multiply" />
           </div>

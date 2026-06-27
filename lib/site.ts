@@ -7,17 +7,16 @@ export const ASSETS = {
   symbol: "/apenas_logo_nutrigen.jpg", // favicon / marca d'água
   hero: "/active-senior-woman-smiling-after-workout.jpg",
   manifesto: "/amazing-strong-young-sports-woman-make-sports-stretching-exercises.jpg",
-  gallery: [
+  geneticMapping: "/mapeamento_genetico.jpg", // hélice de DNA — ênfase no mapeamento
+  practices: [
     "/woman_reflex_exerciced.jpg.avif",
     "/woman_exercite.png",
-    "/woan_exercite.jpg",
-    "/sporty-senior-woman-with-short-hair-front-view.jpg",
   ],
 } as const;
 
-// Placeholder VIP WhatsApp — substitua pelo número real da clínica.
+// WhatsApp VIP da clínica (Recife) — 55 + DDD 81 + número.
 export const WHATSAPP_URL =
-  "https://wa.me/5581999999999?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20Assessor%20de%20Jornada%20de%20Sa%C3%BAde%20da%20NutriGen%20Clinic.";
+  "https://wa.me/5581971121080?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20Assessor%20de%20Jornada%20de%20Sa%C3%BAde%20da%20NutriGen%20Clinic.";
 
 export const PATIENT_AREA_URL = "#agendamento";
 
