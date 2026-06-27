@@ -2,19 +2,19 @@
 // Asset filenames are mapped to the real files present in /public.
 
 export const ASSETS = {
-  logoColor: "/NutriGen_Clinic_Principal.png", // header (fundo claro)
-  logoWhite: "/NutriGen_Clinic_Negativa_Branca.png", // footer (fundo escuro)
+  logoColor: "/optimized/logo-color.webp", // header (fundo claro)
+  logoWhite: "/optimized/logo-white.webp", // footer (fundo escuro)
   symbol: "/apenas_logo_nutrigen.jpg", // favicon / marca d'água
-  hero: "/active-senior-woman-smiling-after-workout.jpg",
-  manifesto: "/amazing-strong-young-sports-woman-make-sports-stretching-exercises.jpg",
-  geneticMapping: "/mapeamento_genetico.jpg", // hélice de DNA — ênfase no mapeamento
+  hero: "/optimized/hero-longevidade.webp",
+  manifesto: "/optimized/manifesto-performance.webp",
+  geneticMapping: "/optimized/mapeamento-genetico.webp", // hélice de DNA
   practices: [
     "/woman_reflex_exerciced.jpg.avif",
     "/woman_exercite.png",
   ],
 } as const;
 
-// WhatsApp VIP da clínica (Recife) — 55 + DDD 81 + número.
+// WhatsApp VIP da clínica (Recife) - 55 + DDD 81 + número.
 export const WHATSAPP_URL =
   "https://wa.me/5581971121080?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20Assessor%20de%20Jornada%20de%20Sa%C3%BAde%20da%20NutriGen%20Clinic.";
 

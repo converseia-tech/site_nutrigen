@@ -94,8 +94,9 @@ export default function Hero() {
             src={ASSETS.hero}
             alt="Mulher sênior sorrindo após treino — vitalidade e longevidade ativa"
             priority
+            quality={88}
             reveal={false}
-            sizes="(max-width: 1024px) 90vw, 52vw"
+            sizes="(max-width: 640px) 90vw, (max-width: 1024px) 70vw, 640px"
             className="aspect-[4/5] rounded-[2rem] shadow-card ring-1 ring-softgray/60 sm:aspect-[5/6]"
           />
           <div className="pointer-events-none absolute inset-0 rounded-[2rem] bg-gradient-to-tr from-dna/15 via-transparent to-transparent" />

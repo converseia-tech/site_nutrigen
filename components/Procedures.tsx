@@ -49,7 +49,7 @@ export default function Procedures() {
             <ParallaxImage
               src={ASSETS.practices[0]}
               alt="Exercício de mobilidade e recuperação"
-              sizes="(max-width: 1024px) 90vw, 48vw"
+              sizes="(max-width: 1024px) 90vw, 600px"
               className="aspect-[4/5] rounded-[2rem] shadow-card ring-1 ring-softgray/60 sm:aspect-[5/6]"
             />
           </Reveal>
@@ -69,6 +69,8 @@ export default function Procedures() {
                 aria-hidden
                 width={160}
                 height={160}
+                quality={70}
+                sizes="128px"
                 className="pointer-events-none absolute -right-8 -top-8 w-32 opacity-[0.06]"
               />
               <div className="relative flex h-14 w-14 items-center justify-center rounded-full bg-sky/15 ring-1 ring-sky/30">

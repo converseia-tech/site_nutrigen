@@ -13,6 +13,7 @@ type ParallaxImageProps = {
   src: string;
   alt: string;
   priority?: boolean;
+  quality?: number;
   sizes?: string;
   className?: string;
   /** Continuous parallax drift on scroll. */
@@ -30,7 +31,8 @@ export default function ParallaxImage({
   src,
   alt,
   priority = false,
-  sizes = "(max-width: 1024px) 90vw, 50vw",
+  quality = 86,
+  sizes = "(max-width: 1024px) 90vw, 600px",
   className = "",
   parallax = true,
   reveal = true,
@@ -101,7 +103,9 @@ export default function ParallaxImage({
           alt={alt}
           fill
           priority={priority}
+          quality={quality}
           sizes={sizes}
+          decoding="async"
           className="object-cover"
         />
       </div>

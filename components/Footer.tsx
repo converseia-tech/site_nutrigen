@@ -13,6 +13,8 @@ export default function Footer() {
             alt="NutriGen Clinic"
             width={220}
             height={120}
+            quality={95}
+            sizes="220px"
             className="h-24 w-auto"
           />
 

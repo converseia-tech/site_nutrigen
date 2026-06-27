@@ -15,7 +15,7 @@ export default function Manifesto() {
             <ParallaxImage
               src={ASSETS.manifesto}
               alt="Mulher forte em alongamento — performance e longevidade ativa"
-              sizes="(max-width: 1024px) 90vw, 48vw"
+              sizes="(max-width: 1024px) 90vw, 600px"
               className="aspect-[4/5] rounded-[2rem] shadow-card ring-1 ring-softgray/60"
             />
             <div className="pointer-events-none absolute -right-4 -top-4 -z-10 h-32 w-32 rounded-full bg-sky/25 blur-2xl" />

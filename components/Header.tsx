@@ -34,6 +34,8 @@ export default function Header() {
             width={150}
             height={48}
             priority
+            quality={95}
+            sizes="150px"
             className="h-10 w-auto md:h-11"
           />
         </a>
