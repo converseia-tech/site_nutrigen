@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mist: #edeef0;
+  --clinical: #ffffff;
+  --nutrigen: #087bb8;
+  --dna: #043780;
+  --cyan: #009cd9;
+  --sky: #66aacd;
+  --softgray: #dadada;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--mist);
+  color: var(--dna);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Editorial heading defaults */
+h1,
+h2,
+h3 {
+  font-family: var(--font-cormorant), "Cormorant Garamond", serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* GSAP reveal helper — elements start hidden, revealed via ScrollTrigger */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  will-change: opacity, transform;
+}
+
+/* Thin, elegant scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--mist);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--sky);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--nutrigen);
+}
+
+/* Reduced motion: show everything, no transforms */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
