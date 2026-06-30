@@ -37,7 +37,7 @@ export default function FloatingWhatsApp() {
             transition={{ duration: 0.2 }}
             className="mr-3 hidden whitespace-nowrap rounded-full bg-white/95 px-4 py-2 text-sm font-medium text-dna shadow-card backdrop-blur sm:block"
           >
-            Fale com um Assessor
+            Fale com um consultor
           </motion.span>
         )}
       </AnimatePresence>

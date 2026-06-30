@@ -1,53 +1,56 @@
 import ParallaxImage from "./ParallaxImage";
 import Reveal from "./Reveal";
+import WhatsAppCTA from "./WhatsAppCTA";
 import { ASSETS } from "@/lib/site";
-import { Drop, ChartLineUp, FileText, Dna } from "@phosphor-icons/react/dist/ssr";
+import { ChartLineUp, FileText, Dna, ClipboardText } from "@phosphor-icons/react/dist/ssr";
 
 const PILLARS = [
   {
-    icon: Drop,
+    icon: ClipboardText,
     step: "01",
-    title: "A Coleta Avançada",
-    text: "Realizada em ambiente clínico ultra-confortável, mapeando marcadores genéticos associados ao envelhecimento, metabolismo e absorção de nutrientes.",
+    title: "Avaliação e coleta de informações",
+    text: "Você passa por uma avaliação inicial para entender histórico, rotina, queixas, objetivos e quais testes fazem sentido para o seu caso.",
   },
   {
     icon: ChartLineUp,
     step: "02",
-    title: "A Análise Multidisciplinar",
-    text: "Leitura orientada por dados cruzando genética, nutrologia e estilo de vida atual.",
+    title: "Análise integrada",
+    text: "A equipe cruza exames, marcadores e hábitos para definir prioridades com mais clareza.",
   },
   {
     icon: FileText,
     step: "03",
-    title: "O Protocolo Definitivo",
-    text: "Um guia de vida personalizado. Suplementação celular avançada e estratégias alimentares moldadas para o seu código genético.",
+    title: "Plano e acompanhamento",
+    text: "Você recebe orientações práticas para alimentação, suplementação e rotina, com acompanhamento conforme sua necessidade.",
   },
 ];
 
 const HIGHLIGHTS = [
-  "Marcadores de envelhecimento",
-  "Metabolismo & nutrientes",
-  "Expressão epigenética",
+  "Metabolismo",
+  "Nutrientes",
+  "Hábitos",
+  "Intestino",
+  "Longevidade",
 ];
 
 export default function Method() {
   return (
     <section
-      id="protocolo"
+      id="metodo"
       className="bg-gradient-to-b from-white via-white to-mist py-20 sm:py-24 lg:py-32"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal className="mx-auto max-w-3xl text-center" stagger>
           <span className="reveal mb-5 inline-flex items-center gap-3 text-[12px] font-semibold uppercase tracking-[0.28em] text-cyan">
             <Dna size={18} weight="thin" color="#009CD9" />
-            Mapeamento Genético + Protocolo NutriGen
+            O Método NutriGen
           </span>
           <h2 className="reveal font-serif text-3xl font-light leading-tight text-nutrigen sm:text-4xl lg:text-[2.9rem]">
-            Mapeamento de Precisão: Como Funciona
+            Um processo claro, guiado por dados e objetivos reais
           </h2>
           <p className="reveal mx-auto mt-6 max-w-xl text-base leading-relaxed text-dna/80">
-            Tudo começa no seu DNA. Decodificamos o seu código genético e o
-            traduzimos em um plano de longevidade definitivo, em três etapas.
+            Em vez de começar por fórmulas prontas, a NutriGen avalia seu
+            contexto clínico, exames e rotina para definir um caminho viável.
           </p>
         </Reveal>
 
@@ -70,7 +73,7 @@ export default function Method() {
                   O seu DNA é o mapa
                 </span>
                 <h3 className="font-serif text-2xl font-light leading-[1.15] text-white sm:text-3xl lg:text-4xl">
-                  Cada protocolo nasce da leitura única do seu código genético.
+                  O mapa genético ganha valor quando é interpretado junto com sua rotina.
                 </h3>
                 <ul className="mt-6 flex flex-wrap gap-2.5">
                   {HIGHLIGHTS.map((h) => (
@@ -109,6 +112,14 @@ export default function Method() {
               <p className="mt-3 text-sm leading-relaxed text-dna/75">{text}</p>
             </article>
           ))}
+        </Reveal>
+
+        <Reveal className="mt-10 text-center" y={28}>
+          <WhatsAppCTA
+            align="center"
+            label="Agendar minha avaliação inicial"
+            message="Olá! Quero agendar minha avaliação inicial na NutriGen Clinic."
+          />
         </Reveal>
       </div>
     </section>

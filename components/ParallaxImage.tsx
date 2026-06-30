@@ -16,6 +16,7 @@ type ParallaxImageProps = {
   quality?: number;
   sizes?: string;
   className?: string;
+  objectPosition?: string;
   /** Continuous parallax drift on scroll. */
   parallax?: boolean;
   /** Elegant clip-path + scale unveil when entering the viewport. */
@@ -34,6 +35,7 @@ export default function ParallaxImage({
   quality = 86,
   sizes = "(max-width: 1024px) 90vw, 600px",
   className = "",
+  objectPosition = "center",
   parallax = true,
   reveal = true,
 }: ParallaxImageProps) {
@@ -64,9 +66,9 @@ export default function ParallaxImage({
         );
         gsap.fromTo(
           inner,
-          { scale: 1.28 },
+          { scale: 1.16 },
           {
-            scale: 1.12,
+            scale: 1.08,
             duration: 1.5,
             ease: "power3.out",
             scrollTrigger: { trigger: wrap, start: "top 85%" },
@@ -97,7 +99,7 @@ export default function ParallaxImage({
 
   return (
     <div ref={wrapRef} className={`relative overflow-hidden ${className}`}>
-      <div ref={innerRef} className="absolute inset-0 scale-[1.12]">
+      <div ref={innerRef} className="absolute inset-0 scale-[1.08]">
         <Image
           src={src}
           alt={alt}
@@ -107,6 +109,7 @@ export default function ParallaxImage({
           sizes={sizes}
           decoding="async"
           className="object-cover"
+          style={{ objectPosition }}
         />
       </div>
     </div>

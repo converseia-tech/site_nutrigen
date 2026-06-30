@@ -18,16 +18,23 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "NutriGen Clinic | Medicina de Precisão & Longevidade",
+  title: "Mapeamento Genético em Recife | NutriGen",
   description:
-    "A ciência da sua genética a serviço da sua longevidade. Mapeamento de DNA e protocolos de saúde ultra personalizados em Recife.",
+    "Mapeamento genético em Recife para nutrição de precisão, saúde e longevidade. Fale com a NutriGen e agende sua avaliação.",
+  keywords: [
+    "mapeamento genético em Recife",
+    "teste nutrigenético Recife",
+    "nutrição de precisão Recife",
+    "NutriGen Clinic",
+    "longevidade Recife",
+  ],
   icons: {
-    icon: "/apenas_logo_nutrigen.jpg",
+    icon: "/novas_logos/logo_azul_comtextonocentro_fundotransparente.png",
   },
   openGraph: {
-    title: "NutriGen Clinic | Medicina de Precisão & Longevidade",
+    title: "Mapeamento Genético em Recife | NutriGen",
     description:
-      "Decodificamos seus biomarcadores para desenhar um estilo de vida sob medida através da epigenética.",
+      "Mapeamento genético em Recife para nutrição de precisão, saúde e longevidade. Fale com a NutriGen e agende sua avaliação.",
     type: "website",
   },
 };

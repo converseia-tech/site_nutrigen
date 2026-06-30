@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { List, X } from "@phosphor-icons/react";
-import { ASSETS, NAV_LINKS, PATIENT_AREA_URL } from "@/lib/site";
+import { ASSETS, NAV_LINKS, WHATSAPP_URL } from "@/lib/site";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -41,7 +41,7 @@ export default function Header() {
         </a>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-9 lg:flex">
+        <nav className="hidden items-center gap-7 lg:flex">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
@@ -56,10 +56,12 @@ export default function Header() {
         {/* CTA + mobile toggle */}
         <div className="flex items-center gap-3">
           <a
-            href={PATIENT_AREA_URL}
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden rounded-full border border-nutrigen px-5 py-2 text-[12px] font-semibold uppercase tracking-[0.12em] text-nutrigen transition-all duration-300 hover:bg-nutrigen hover:text-white sm:inline-block"
           >
-            Área da Paciente
+            Agendar avaliação
           </a>
           <button
             type="button"
@@ -94,11 +96,13 @@ export default function Header() {
                 </a>
               ))}
               <a
-                href={PATIENT_AREA_URL}
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
                 className="mt-2 rounded-full border border-nutrigen px-5 py-2 text-center text-[12px] font-semibold uppercase tracking-[0.12em] text-nutrigen transition-all hover:bg-nutrigen hover:text-white"
               >
-                Área da Paciente
+                Agendar avaliação
               </a>
             </div>
           </motion.nav>
