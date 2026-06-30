@@ -6,6 +6,7 @@ import Method from "@/components/Method";
 import ProductOverview from "@/components/ProductOverview";
 import Differentials from "@/components/Differentials";
 import Procedures from "@/components/Procedures";
+import ScientificAuthority from "@/components/ScientificAuthority";
 import SocialProof from "@/components/SocialProof";
 import FAQ from "@/components/FAQ";
 import Location from "@/components/Location";
@@ -62,6 +63,7 @@ export default function Home() {
         <ProductOverview />
         <Differentials />
         <SocialProof />
+        <ScientificAuthority />
         <Procedures />
         <FAQ />
         <Location />

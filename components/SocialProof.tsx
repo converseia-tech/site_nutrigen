@@ -47,27 +47,6 @@ export default function SocialProof() {
             />
           </Reveal>
         </div>
-
-        <Reveal className="mx-auto mt-16 max-w-3xl text-center" stagger>
-          <span className="reveal mb-5 inline-block text-[12px] font-semibold uppercase tracking-[0.28em] text-cyan">
-            Depoimentos
-          </span>
-          <h2 className="reveal font-serif text-3xl font-light leading-tight text-nutrigen sm:text-4xl">
-            Pessoas diferentes precisam de planos diferentes
-          </h2>
-          <p className="reveal mx-auto mt-5 max-w-xl text-sm leading-relaxed text-dna/70">
-            Avaliações e relatos reais podem ser exibidos aqui quando houver
-            autorização de uso e origem verificável.
-          </p>
-        </Reveal>
-
-        <Reveal className="mt-10 text-center" y={28}>
-          <WhatsAppCTA
-            align="center"
-            label="Quero avaliar meu caso com segurança"
-            message="Olá! Quero avaliar meu caso com segurança antes de fazer o mapeamento genético."
-          />
-        </Reveal>
       </div>
     </section>
   );
