@@ -1,27 +1,46 @@
-import ParallaxImage from "./ParallaxImage";
+import SideImage from "./SideImage";
 import Reveal from "./Reveal";
 import WhatsAppCTA from "./WhatsAppCTA";
 import { ASSETS } from "@/lib/site";
-import { ChartLineUp, FileText, Dna, ClipboardText } from "@phosphor-icons/react/dist/ssr";
+import {
+  CalendarCheck,
+  ChartLineUp,
+  ClipboardText,
+  Dna,
+  Drop,
+  FileText,
+} from "@phosphor-icons/react/dist/ssr";
 
 const PILLARS = [
   {
-    icon: ClipboardText,
+    icon: CalendarCheck,
     step: "01",
-    title: "Avaliação e coleta de informações",
-    text: "Você passa por uma avaliação inicial para entender histórico, rotina, queixas, objetivos e quais testes fazem sentido para o seu caso.",
+    title: "Agendamento da avaliação",
+    text: "Entendemos seus objetivos e definimos os exames necessários.",
+  },
+  {
+    icon: Drop,
+    step: "02",
+    title: "Coleta",
+    text: "A coleta é simples, rápida e indolor.",
   },
   {
     icon: ChartLineUp,
-    step: "02",
-    title: "Análise integrada",
-    text: "A equipe cruza exames, marcadores e hábitos para definir prioridades com mais clareza.",
+    step: "03",
+    title: "Análise Laboratorial",
+    text: "Seu material é analisado em laboratório especializado.",
   },
   {
     icon: FileText,
-    step: "03",
-    title: "Plano e acompanhamento",
-    text: "Você recebe orientações práticas para alimentação, suplementação e rotina, com acompanhamento conforme sua necessidade.",
+    step: "04",
+    title: "Interpretação Clínica",
+    text: "A equipe da NutriGen interpreta os resultados.",
+  },
+  {
+    icon: ClipboardText,
+    step: "05",
+    title: "Plano Personalizado",
+    text: "Você recebe orientações adaptadas ao seu perfil biológico.",
   },
 ];
 
@@ -43,43 +62,47 @@ export default function Method() {
         <Reveal className="mx-auto max-w-3xl text-center" stagger>
           <span className="reveal mb-5 inline-flex items-center gap-3 text-[12px] font-semibold uppercase tracking-[0.28em] text-cyan">
             <Dna size={18} weight="thin" color="#009CD9" />
-            O Método NutriGen
+            Como funciona
           </span>
-          <h2 className="reveal font-serif text-3xl font-light leading-tight text-nutrigen sm:text-4xl lg:text-[2.9rem]">
-            Um processo claro, guiado por dados e objetivos reais
+          <h2 className="reveal font-serif text-3xl font-light leading-tight text-dna sm:text-4xl lg:text-[2.9rem]">
+            Como funciona o teste genético na NutriGen?
           </h2>
-          <p className="reveal mx-auto mt-6 max-w-xl text-base leading-relaxed text-dna/80">
-            Em vez de começar por fórmulas prontas, a NutriGen avalia seu
-            contexto clínico, exames e rotina para definir um caminho viável.
+          <p className="reveal mx-auto mt-6 max-w-xl text-base font-medium leading-relaxed text-nutrigen">
+            Um processo claro, da avaliação inicial ao plano personalizado —
+            com interpretação profissional em cada etapa.
           </p>
         </Reveal>
 
-        {/* Cinematic genetic-mapping banner */}
         <Reveal className="mt-12 sm:mt-16" y={56}>
-          <div className="relative overflow-hidden rounded-[2rem] shadow-card ring-1 ring-dna/20">
-            <ParallaxImage
+          <div className="relative overflow-hidden rounded-[2rem] shadow-card ring-1 ring-dna/30">
+            <SideImage
               src={ASSETS.geneticMapping}
               alt="Hélice de DNA — mapeamento genético de precisão"
               sizes="(max-width: 1024px) 92vw, 1200px"
-              className="aspect-[16/10] sm:aspect-[21/9]"
+              matchTextHeight={false}
+              className="aspect-[16/10] min-h-0 rounded-none shadow-none ring-0 sm:aspect-[21/9]"
             />
-            {/* Legibility overlay */}
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-dna/90 via-dna/55 to-transparent" />
+            {/* Camadas de contraste: base escura + vinheta lateral + glow ciano */}
+            <div className="pointer-events-none absolute inset-0 bg-dna/55" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-dna via-dna/90 to-dna/35" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-dna/70 via-transparent to-dna/25" />
+            <div className="pointer-events-none absolute -left-8 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-cyan/15 blur-3xl" />
 
             <div className="absolute inset-0 flex flex-col justify-center px-7 py-8 sm:px-12 lg:px-16">
-              <div className="max-w-xl">
-                <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white backdrop-blur-sm sm:text-[11px]">
-                  <Dna size={16} weight="thin" color="#FFFFFF" />
+              <div className="max-w-xl rounded-2xl border border-white/15 bg-dna/35 p-5 shadow-[0_12px_40px_-12px_rgba(4,55,128,0.55)] backdrop-blur-md sm:p-7">
+                <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-cyan/40 bg-cyan/20 px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-white shadow-sm sm:text-[11px]">
+                  <Dna size={16} weight="bold" color="#FFFFFF" />
                   O seu DNA é o mapa
                 </span>
-                <h3 className="font-serif text-2xl font-light leading-[1.15] text-white sm:text-3xl lg:text-4xl">
-                  O mapa genético ganha valor quando é interpretado junto com sua rotina.
+                <h3 className="font-serif text-2xl font-medium leading-[1.15] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)] sm:text-3xl lg:text-4xl">
+                  O teste genético analisa pequenas variações no seu DNA que
+                  ajudam a entender como seu organismo funciona.
                 </h3>
                 <ul className="mt-6 flex flex-wrap gap-2.5">
                   {HIGHLIGHTS.map((h) => (
                     <li
                       key={h}
-                      className="rounded-full border border-white/25 bg-white/5 px-3.5 py-1.5 text-[11px] font-medium uppercase tracking-[0.1em] text-white/90 backdrop-blur-sm sm:text-xs"
+                      className="rounded-full border border-white/35 bg-white/15 px-3.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.1em] text-white shadow-sm backdrop-blur-sm sm:text-xs"
                     >
                       {h}
                     </li>
@@ -90,26 +113,25 @@ export default function Method() {
           </div>
         </Reveal>
 
-        {/* 3 pillars */}
         <Reveal
-          className="mt-10 grid gap-6 sm:mt-12 sm:gap-7 md:grid-cols-3"
+          className="mt-10 grid gap-5 sm:mt-12 sm:gap-6 md:grid-cols-2 lg:grid-cols-5"
           stagger
         >
           {PILLARS.map(({ icon: Icon, step, title, text }) => (
             <article
               key={step}
-              className="reveal group relative flex flex-col rounded-2xl border border-softgray bg-mist/50 p-8 transition-all duration-300 hover:-translate-y-1 hover:border-sky hover:shadow-card"
+              className="reveal group relative flex flex-col rounded-2xl border border-sky/25 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan hover:shadow-card"
             >
-              <span className="font-serif text-5xl font-light text-sky/60">
+              <span className="font-serif text-4xl font-light text-sky/70">
                 {step}
               </span>
-              <div className="mt-6 flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-softgray/70">
-                <Icon size={32} weight="thin" color="#087BB8" />
+              <div className="mt-5 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-dna/10 to-cyan/15 ring-1 ring-sky/30">
+                <Icon size={28} weight="thin" color="#043780" />
               </div>
-              <h3 className="mt-6 font-serif text-2xl font-medium text-dna">
+              <h3 className="mt-5 font-serif text-xl font-medium text-dna">
                 {title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-dna/75">{text}</p>
+              <p className="mt-2 text-sm leading-relaxed text-dna/80">{text}</p>
             </article>
           ))}
         </Reveal>
@@ -118,7 +140,7 @@ export default function Method() {
           <WhatsAppCTA
             align="center"
             label="Agendar minha avaliação inicial"
-            message="Olá! Quero agendar minha avaliação inicial na NutriGen Clinic."
+            message="Olá! Quero agendar minha avaliação de teste genético na NutriGen Clinic."
           />
         </Reveal>
       </div>

@@ -36,11 +36,21 @@ export default function Footer() {
             </a>
           </nav>
 
+          <div
+            id="privacidade"
+            className="mt-8 max-w-2xl scroll-mt-28 text-xs leading-relaxed text-mist/55"
+          >
+            Utilizamos cookies e dados de navegação apenas para funcionamento do
+            site, análise de uso e melhoria da experiência. Ao continuar, você
+            concorda com o tratamento conforme a legislação aplicável (LGPD).
+            Em caso de dúvidas, fale conosco pelo WhatsApp.
+          </div>
+
           <div className="mt-10 h-px w-full max-w-md bg-mist/15" />
 
           <p className="mt-8 max-w-2xl text-sm leading-relaxed text-mist/70">
-            NutriGen Clinic — medicina de precisão, nutrição personalizada,
-            mapeamento genético e longevidade em Recife.
+            NutriGen Clinic — teste genético em Recife, medicina de precisão,
+            nutrição personalizada e longevidade com interpretação profissional.
           </p>
           <p className="mt-4 max-w-2xl text-xs leading-relaxed text-mist/55">
             {CONTACT.address}

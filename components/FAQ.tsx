@@ -4,21 +4,21 @@ import { FAQS } from "@/lib/site";
 
 export default function FAQ() {
   return (
-    <section
-      id="duvidas"
-      className="bg-white py-20 sm:py-24 lg:py-32"
-    >
+    <section id="duvidas" className="bg-white py-20 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-5xl px-6 lg:px-10">
         <Reveal className="mx-auto max-w-3xl text-center" stagger>
           <span className="reveal mb-5 inline-block text-[12px] font-semibold uppercase tracking-[0.28em] text-cyan">
-            Perguntas Frequentes
+            Dúvidas frequentes
           </span>
-          <h2 className="reveal font-serif text-3xl font-light leading-tight text-nutrigen sm:text-4xl lg:text-[2.9rem]">
-            Ainda tem dúvidas antes de agendar?
+          <h2 className="reveal font-serif text-3xl font-light leading-tight text-dna sm:text-4xl lg:text-[2.9rem]">
+            Ainda tem dúvidas sobre o teste genético?
           </h2>
         </Reveal>
 
-        <Reveal className="mt-12 divide-y divide-softgray rounded-2xl border border-softgray bg-mist/40" stagger>
+        <Reveal
+          className="mt-12 divide-y divide-sky/20 rounded-2xl border border-sky/25 bg-mist/50"
+          stagger
+        >
           {FAQS.map((item) => (
             <details key={item.question} className="reveal group p-6">
               <summary className="cursor-pointer list-none font-serif text-xl font-medium text-dna">
@@ -29,7 +29,7 @@ export default function FAQ() {
                   </span>
                 </span>
               </summary>
-              <p className="mt-4 max-w-3xl text-sm leading-relaxed text-dna/75">
+              <p className="mt-4 max-w-3xl text-sm font-medium leading-relaxed text-dna/85">
                 {item.answer}
               </p>
             </details>
@@ -40,7 +40,7 @@ export default function FAQ() {
           <WhatsAppCTA
             align="center"
             label="Ainda tenho dúvida sobre o atendimento"
-            message="Olá! Ainda tenho dúvidas sobre o atendimento da NutriGen Clinic."
+            message="Olá! Ainda tenho dúvidas sobre o teste genético da NutriGen Clinic."
           />
         </Reveal>
       </div>

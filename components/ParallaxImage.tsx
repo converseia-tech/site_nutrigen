@@ -98,8 +98,12 @@ export default function ParallaxImage({
   }, [parallax, reveal]);
 
   return (
-    <div ref={wrapRef} className={`relative overflow-hidden ${className}`}>
-      <div ref={innerRef} className="absolute inset-0 scale-[1.08]">
+    <div
+      ref={wrapRef}
+      className={`relative overflow-hidden ${className}`}
+    >
+      {/* absolute fill keeps object-cover sharp while matching text-column height */}
+      <div ref={innerRef} className="absolute inset-0 scale-[1.08] will-change-transform">
         <Image
           src={src}
           alt={alt}

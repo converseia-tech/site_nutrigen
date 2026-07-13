@@ -18,29 +18,35 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mapeamento Genético em Recife | NutriGen",
+  title: "Teste Genético em Recife | NutriGen Clinic",
   description:
-    "Mapeamento genético em Recife para nutrição de precisão, saúde e longevidade. Fale com a NutriGen e agende sua avaliação.",
+    "Teste genético em Recife com interpretação profissional. Nutrição baseada em genética, Medicina de Precisão, emagrecimento, suplementação e longevidade na NutriGen.",
   keywords: [
+    "teste genético em Recife",
+    "onde fazer teste genético em Recife",
+    "teste nutrigenético em Recife",
     "mapeamento genético em Recife",
-    "teste nutrigenético Recife",
-    "nutrição de precisão Recife",
+    "exame genético para emagrecimento",
+    "teste genético para alimentação",
+    "Medicina de Precisão em Recife",
+    "clínica de genética em Recife",
+    "teste nutrigenético",
+    "nutrição personalizada",
     "NutriGen Clinic",
-    "longevidade Recife",
   ],
   icons: {
     icon: "/novas_logos/logo_azul_comtextonocentro_fundotransparente.png",
   },
   openGraph: {
-    title: "Mapeamento Genético em Recife | NutriGen",
+    title: "Teste Genético em Recife | NutriGen Clinic",
     description:
-      "Mapeamento genético em Recife para nutrição de precisão, saúde e longevidade. Fale com a NutriGen e agende sua avaliação.",
+      "Entenda o que seu DNA revela sobre alimentação, metabolismo e longevidade. Agende sua avaliação na NutriGen.",
     type: "website",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#087BB8",
+  themeColor: "#043780",
   width: "device-width",
   initialScale: 1,
 };

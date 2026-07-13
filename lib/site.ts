@@ -6,16 +6,25 @@ export const ASSETS = {
     "/novas_logos/Logo_azul__texto_preto_NutriGen-lateral-comnome-fundotransparente.png",
   logoWhite: "/novas_logos/logo_branca_comtextobrancolateral_fundotransbranco.png",
   symbol: "/novas_logos/logo_azul_comtextonocentro_fundotransparente.png",
-  hero: "/novasimagens/hero-saude.webp",
+  // JPG de alta resolução (mesma cena do webp antigo, maior nitidez)
+  hero: "/novasimagens/mulher_se_esticando_vidasaudavel_excelenteprahero.jpg",
+  // PNG premium com top azul alinhado à identidade
   manifesto: "/novasimagens/parte_2/mulher_rindo_correndo.png",
-  geneticMapping: "/mapeamento_genetico.jpg", // hélice de DNA mantida conforme solicitado
-  interpretation: "/novasimagens/vida-saudavel-paz.webp",
+  geneticMapping: "/mapeamento_genetico.jpg",
   reportPreview: "/novasimagens/imagem_prontuario_nutrigen.png",
-  productFood: "/novasimagens/mulher_fitness_cortando_frutas.webp",
-  productExercise: "/novasimagens/parte_2/mulher_fitness_se_exercitando.png",
+  // WebP otimizado de alta qualidade (performance / manifesto)
+  productFood: "/optimized/manifesto-performance.webp",
+  // JPG de alta qualidade para performance/treino
+  productExercise:
+    "/amazing-strong-young-sports-woman-make-sports-stretching-exercises.jpg",
+  // Longevidade e vitalidade — retrato de alta resolução
+  longevity: "/active-senior-woman-smiling-after-workout.jpg",
+  // Medicina de Precisão — imagem lateral fixa
+  precisionMedicine: "/woan_exercite.jpg",
   practices: [
-    "/novasimagens/mulher_praticando_yoga_sem_aparecer_o_rosto.webp",
+    "/novasimagens/parte_2/mulher_fitness_se_exercitando.png",
     "/novasimagens/corrida-praia.webp",
+    "/optimized/manifesto-performance.webp",
   ],
 } as const;
 
@@ -51,38 +60,33 @@ export const NAV_LINKS = [
 
 export const FAQS = [
   {
-    question: "Quanto custa o atendimento na NutriGen Clinic?",
+    question: "Quanto custa um teste genético em Recife?",
     answer:
-      "O valor pode variar conforme a avaliação, testes indicados e tipo de protocolo necessário. O melhor caminho é falar com um consultor para entender sua necessidade e receber a orientação correta.",
+      "O investimento depende do tipo de análise indicada para cada objetivo. Durante a avaliação inicial, nossa equipe apresenta a melhor opção para seu caso.",
   },
   {
     question: "O teste genético substitui uma consulta?",
     answer:
-      "Não. O teste é uma ferramenta de análise. A consulta e a interpretação profissional são essenciais para transformar os dados em um plano seguro, claro e aplicável.",
+      "Não. O exame complementa a avaliação clínica e torna as decisões muito mais personalizadas.",
   },
   {
-    question: "Em quanto tempo recebo meu protocolo?",
+    question: "Quanto tempo demora?",
     answer:
-      "O prazo depende dos testes solicitados e da análise necessária. Durante o atendimento, a equipe explica cada etapa e informa os próximos passos.",
+      "Em média, os resultados ficam disponíveis entre 20 e 30 dias, conforme o exame realizado.",
   },
   {
-    question: "Preciso estar doente para fazer o mapeamento genético?",
+    question: "O teste precisa ser repetido?",
     answer:
-      "Não. Muitas pessoas procuram a NutriGen para prevenção, longevidade, performance, qualidade de vida e decisões mais inteligentes sobre saúde.",
+      "Não. Seu DNA permanece o mesmo ao longo da vida. Novas interpretações podem ser feitas conforme a evolução da ciência e dos seus objetivos.",
   },
   {
-    question: "A NutriGen atende apenas emagrecimento?",
+    question: "O teste é indicado apenas para emagrecimento?",
     answer:
-      "Não. O foco é saúde personalizada. Emagrecimento pode fazer parte da jornada, mas a proposta principal é entender o corpo e construir um plano mais preciso.",
+      "Não. Também auxilia decisões relacionadas à suplementação, metabolismo, prevenção, longevidade, saúde intestinal e qualidade de vida.",
   },
   {
-    question: "O atendimento é em Recife?",
+    question: "A NutriGen atende apenas em Recife?",
     answer:
-      "Sim. A NutriGen Clinic atende em Boa Vista, Recife, com fácil acesso para regiões como Derby, Graças, Espinheiro, Ilha do Leite, Casa Forte e Boa Viagem.",
-  },
-  {
-    question: "Existe garantia de resultado?",
-    answer:
-      "Na área da saúde, não é correto prometer resultado igual para todos. O compromisso da NutriGen é oferecer uma avaliação individualizada, orientação responsável e acompanhamento baseado em dados.",
+      "Sim. Atendimento presencial em Recife, com profissionais especializados em Medicina de Precisão. A clínica fica em Boa Vista, com fácil acesso a Derby, Graças, Espinheiro e região.",
   },
 ] as const;

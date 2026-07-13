@@ -38,12 +38,12 @@ export default function ScientificAuthority() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal className="mx-auto max-w-3xl text-center" stagger>
           <span className="reveal mb-5 inline-block text-[12px] font-semibold uppercase tracking-[0.28em] text-cyan">
-            Prova Científica &amp; Autoridade
+            Conteúdo científico
           </span>
-          <h2 className="reveal font-serif text-3xl font-light leading-tight text-nutrigen sm:text-4xl lg:text-[2.9rem]">
+          <h2 className="reveal font-serif text-3xl font-light leading-tight text-dna sm:text-4xl lg:text-[2.9rem]">
             Autoridade científica em genética e epigenética
           </h2>
-          <p className="reveal mx-auto mt-6 max-w-xl text-base leading-relaxed text-dna/80">
+          <p className="reveal mx-auto mt-6 max-w-xl text-base font-medium leading-relaxed text-nutrigen">
             Especialistas convidados explicam, no nosso Instagram, como o
             mapeamento genético e os hábitos moldam a sua longevidade.
           </p>

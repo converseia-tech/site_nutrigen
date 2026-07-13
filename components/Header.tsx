@@ -19,17 +19,19 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 backdrop-blur-md ${
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/80 shadow-[0_1px_0_0_#DADADA]"
-          : "bg-white/70"
+          ? "bg-dna/95 shadow-[0_8px_32px_-12px_rgba(4,55,128,0.45)] backdrop-blur-md"
+          : "bg-dna/90 backdrop-blur-md"
       }`}
     >
+      {/* Soft cyan edge like footer transition */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-cyan/40 to-transparent" />
+
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 lg:px-10">
-        {/* Logo */}
         <a href="#topo" className="flex items-center" aria-label="NutriGen Clinic">
           <Image
-            src={ASSETS.logoColor}
+            src={ASSETS.logoWhite}
             alt="NutriGen Clinic"
             width={150}
             height={48}
@@ -40,33 +42,31 @@ export default function Header() {
           />
         </a>
 
-        {/* Desktop nav */}
         <nav className="hidden items-center gap-7 lg:flex">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-[13px] font-medium uppercase tracking-[0.12em] text-dna/80 transition-colors hover:text-nutrigen"
+              className="text-[13px] font-medium uppercase tracking-[0.12em] text-mist/85 transition-colors hover:text-cyan"
             >
               {link.label}
             </a>
           ))}
         </nav>
 
-        {/* CTA + mobile toggle */}
         <div className="flex items-center gap-3">
           <a
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden rounded-full border border-nutrigen px-5 py-2 text-[12px] font-semibold uppercase tracking-[0.12em] text-nutrigen transition-all duration-300 hover:bg-nutrigen hover:text-white sm:inline-block"
+            className="hidden rounded-full border border-mist/35 bg-white/5 px-5 py-2 text-[12px] font-semibold uppercase tracking-[0.12em] text-mist transition-all duration-300 hover:border-cyan hover:bg-cyan hover:text-white sm:inline-block"
           >
             Agendar avaliação
           </a>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
-            className="text-dna lg:hidden"
+            className="text-mist lg:hidden"
             aria-label={open ? "Fechar menu" : "Abrir menu"}
           >
             {open ? <X size={28} weight="thin" /> : <List size={28} weight="thin" />}
@@ -74,7 +74,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {open && (
           <motion.nav
@@ -82,7 +81,7 @@ export default function Header() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="overflow-hidden border-t border-softgray bg-white/95 backdrop-blur-md lg:hidden"
+            className="overflow-hidden border-t border-white/10 bg-dna/98 backdrop-blur-md lg:hidden"
           >
             <div className="flex flex-col gap-1 px-6 py-4">
               {NAV_LINKS.map((link) => (
@@ -90,7 +89,7 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="py-2 text-sm font-medium uppercase tracking-[0.1em] text-dna/80 transition-colors hover:text-nutrigen"
+                  className="py-2 text-sm font-medium uppercase tracking-[0.1em] text-mist/85 transition-colors hover:text-cyan"
                 >
                   {link.label}
                 </a>
@@ -100,7 +99,7 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
-                className="mt-2 rounded-full border border-nutrigen px-5 py-2 text-center text-[12px] font-semibold uppercase tracking-[0.12em] text-nutrigen transition-all hover:bg-nutrigen hover:text-white"
+                className="mt-2 rounded-full border border-cyan/60 px-5 py-2 text-center text-[12px] font-semibold uppercase tracking-[0.12em] text-cyan transition-all hover:bg-cyan hover:text-white"
               >
                 Agendar avaliação
               </a>

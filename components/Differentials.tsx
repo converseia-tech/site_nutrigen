@@ -1,40 +1,43 @@
 import Reveal from "./Reveal";
 import WhatsAppCTA from "./WhatsAppCTA";
-import ParallaxImage from "./ParallaxImage";
+import SideImage from "./SideImage";
 import { ASSETS } from "@/lib/site";
 import {
-  Dna,
+  BowlFood,
   ChartLineUp,
   ClipboardText,
+  Dna,
+  Fire,
   Heartbeat,
-  Target,
+  PersonSimpleRun,
+  ShieldCheck,
 } from "@phosphor-icons/react/dist/ssr";
+
+const ORIENTATIONS = [
+  { icon: BowlFood, label: "alimentação" },
+  { icon: ClipboardText, label: "suplementação" },
+  { icon: Heartbeat, label: "vitaminas" },
+  { icon: Fire, label: "emagrecimento" },
+  { icon: PersonSimpleRun, label: "performance" },
+  { icon: ShieldCheck, label: "longevidade" },
+  { icon: ChartLineUp, label: "prevenção" },
+];
 
 const DIFFERENTIALS = [
   {
     icon: Dna,
-    title: "Nutrição e Nutrologia Baseada em Genética",
-    text: "Utilizamos testes genéticos e nutrigenéticos para que nossas estratégias sejam guiadas pelo seu DNA.",
+    title: "Interpretação profissional",
+    text: "O teste genético sozinho não muda sua saúde. O que faz diferença é saber interpretar essas informações com critério clínico.",
   },
   {
     icon: ChartLineUp,
-    title: "Avaliação Metabólica Completa",
-    text: "Análise detalhada do seu perfil metabólico e nutricional para direcionar escolhas mais precisas.",
-  },
-  {
-    icon: Target,
-    title: "Programas de Emagrecimento Personalizados",
-    text: "Estratégias alimentares e infusionais construídas de acordo com seu metabolismo, estilo de vida e objetivos.",
-  },
-  {
-    icon: Heartbeat,
-    title: "Otimização de Micronutrientes",
-    text: "Avaliação e correção de possíveis deficiências nutricionais com orientação profissional.",
+    title: "Visão integrada",
+    text: "Cruzamos genética, exames laboratoriais, microbiota intestinal, composição corporal e histórico clínico.",
   },
   {
     icon: ClipboardText,
-    title: "Acompanhamento Estratégico",
-    text: "Monitoramento contínuo para garantir evolução real, sustentável e alinhada ao seu plano.",
+    title: "Estratégia personalizada",
+    text: "Cada resultado vira orientação prática, alinhada aos seus objetivos e à sua rotina real.",
   },
 ];
 
@@ -44,51 +47,75 @@ export default function Differentials() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal className="mx-auto max-w-3xl text-center" stagger>
           <span className="reveal mb-5 inline-block text-[12px] font-semibold uppercase tracking-[0.28em] text-cyan">
-            Diferenciais
+            O diferencial da NutriGen
           </span>
-          <h2 className="reveal font-serif text-3xl font-light leading-tight text-nutrigen sm:text-4xl lg:text-[2.9rem]">
-            Por que escolher a NutriGen?
+          <h2 className="reveal font-serif text-3xl font-light leading-tight text-dna sm:text-4xl lg:text-[2.9rem]">
+            O teste genético sozinho não muda sua saúde.
           </h2>
+          <p className="reveal mx-auto mt-6 max-w-2xl text-base font-medium leading-relaxed text-nutrigen">
+            O que faz diferença é saber interpretar essas informações.
+          </p>
         </Reveal>
 
-        <Reveal className="mt-12 grid items-center gap-8 lg:grid-cols-[0.9fr_1.1fr]" y={48}>
-          <div>
-            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-sky/35 bg-white px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] text-sky shadow-sm">
-              Relatório interpretado
+        <Reveal
+          className="mt-12 grid items-stretch gap-8 lg:grid-cols-[0.95fr_1.05fr]"
+          y={48}
+        >
+          <div className="flex flex-col justify-center">
+            <span className="mb-4 inline-flex w-fit items-center gap-2 rounded-full border border-sky/40 bg-white px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] text-cyan shadow-sm">
+              Interpretação clínica
             </span>
             <h3 className="font-serif text-3xl font-light leading-tight text-dna sm:text-4xl">
-              Seus dados precisam virar decisões simples para a rotina
+              Dados + contexto = decisões claras
             </h3>
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-dna/78">
-              O diferencial da NutriGen não é apenas solicitar testes. A equipe
-              organiza as informações em uma leitura clara para orientar
-              alimentação, suplementação, metabolismo e acompanhamento.
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-dna/90">
+              Na NutriGen, cada resultado é analisado por profissionais
+              especializados que integram genética, exames laboratoriais,
+              microbiota intestinal, composição corporal e histórico clínico
+              para construir uma estratégia personalizada.
             </p>
+            <p className="mt-5 text-sm font-semibold uppercase tracking-[0.14em] text-cyan">
+              Você recebe orientação prática sobre:
+            </p>
+            <ul className="mt-4 flex flex-wrap gap-2.5">
+              {ORIENTATIONS.map(({ icon: Icon, label }) => (
+                <li
+                  key={label}
+                  className="inline-flex items-center gap-2 rounded-full border border-sky/30 bg-white px-3.5 py-1.5 text-sm font-medium capitalize text-dna shadow-sm"
+                >
+                  <Icon size={16} weight="bold" color="#009CD9" />
+                  {label}
+                </li>
+              ))}
+            </ul>
           </div>
 
-          <ParallaxImage
-            src={ASSETS.reportPreview}
-            alt="Relatório NutriGen com painéis de saúde metabólica, intestinal e imunológica"
-            quality={95}
-            objectPosition="center"
-            sizes="(max-width: 1024px) 92vw, 680px"
-            className="aspect-[16/9] rounded-[2rem] shadow-card ring-1 ring-softgray/70"
-          />
+          <div className="h-full min-h-[280px] lg:min-h-[360px]">
+            <SideImage
+              src={ASSETS.reportPreview}
+              alt="Relatório NutriGen com painéis de saúde metabólica, intestinal e imunológica"
+              quality={95}
+              objectPosition="center"
+              sizes="(max-width: 1024px) 92vw, 680px"
+              matchTextHeight
+              className="h-full min-h-[280px] lg:min-h-full"
+            />
+          </div>
         </Reveal>
 
-        <Reveal className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3" stagger>
+        <Reveal className="mt-12 grid gap-6 md:grid-cols-3" stagger>
           {DIFFERENTIALS.map(({ icon: Icon, title, text }) => (
             <article
               key={title}
-              className="reveal rounded-2xl border border-softgray bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-sky hover:shadow-card"
+              className="reveal rounded-2xl border border-sky/25 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan hover:shadow-card"
             >
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-sky/15 ring-1 ring-sky/30">
-                <Icon size={30} weight="thin" color="#087BB8" />
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-dna/10 to-cyan/15 ring-1 ring-sky/30">
+                <Icon size={30} weight="thin" color="#043780" />
               </div>
               <h3 className="mt-6 font-serif text-2xl font-medium text-dna">
                 {title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-dna/75">{text}</p>
+              <p className="mt-3 text-sm leading-relaxed text-dna/80">{text}</p>
             </article>
           ))}
         </Reveal>
@@ -97,7 +124,7 @@ export default function Differentials() {
           <WhatsAppCTA
             align="center"
             label="Escolher um cuidado guiado por dados"
-            message="Olá! Quero escolher um cuidado guiado por dados na NutriGen Clinic."
+            message="Olá! Quero um cuidado guiado por dados e interpretação profissional na NutriGen."
           />
         </Reveal>
       </div>

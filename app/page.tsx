@@ -20,7 +20,7 @@ const structuredData = [
     "@type": "MedicalBusiness",
     name: "NutriGen Clinic",
     description:
-      "Clínica de medicina de precisão, nutrição personalizada, mapeamento genético e longevidade em Recife.",
+      "Teste genético em Recife com interpretação profissional. Medicina de precisão, nutrição personalizada e longevidade na NutriGen Clinic.",
     telephone: PHONE_E164,
     address: {
       "@type": "PostalAddress",
@@ -57,14 +57,14 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <About />
         <Manifesto />
-        <Method />
         <ProductOverview />
-        <Differentials />
         <SocialProof />
-        <ScientificAuthority />
+        <Method />
+        <Differentials />
         <Procedures />
+        <About />
+        <ScientificAuthority />
         <FAQ />
         <Location />
       </main>

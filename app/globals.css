@@ -23,13 +23,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Editorial heading defaults */
+/* Editorial heading defaults — azul profundo para mais contraste */
 h1,
 h2,
 h3 {
   font-family: var(--font-cormorant), "Cormorant Garamond", serif;
   font-weight: 400;
   letter-spacing: 0.01em;
+  color: var(--dna);
 }
 
 /* GSAP reveal helper — elements start hidden, revealed via ScrollTrigger */

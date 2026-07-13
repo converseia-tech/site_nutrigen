@@ -6,21 +6,21 @@ const ABOUT_ITEMS = [
   {
     icon: Dna,
     title: "Quem Somos",
-    text: "Uma clínica que integra nutrição, medicina e tecnologia para transformar dados do corpo em decisões de cuidado.",
+    text: "A NutriGen é uma clínica de Medicina de Precisão em Recife que integra genética, nutrição e acompanhamento especializado para transformar dados do corpo em decisões de cuidado.",
   },
   {
     icon: Sparkle,
     title: "O Que Fazemos",
-    text: "Avaliamos exames, rotina e objetivos para orientar alimentação, suplementação e estratégias de longevidade.",
+    text: "Utilizamos o teste genético como ferramenta clínica — sempre com interpretação profissional — para orientar alimentação, suplementação, prevenção e qualidade de vida.",
   },
   {
     icon: Heartbeat,
     title: "Nossa Abordagem",
-    text: "Cada plano nasce de uma leitura individual e evolui com acompanhamento profissional.",
+    text: "Nenhuma informação é analisada isoladamente. Cruzamos genética, exames, microbiota, composição corporal e histórico clínico em uma estratégia personalizada.",
   },
 ];
 
-const SPECIALTIES = ["Nutrição", "Nutrologia", "Endocrinologia"];
+const SPECIALTIES = ["Nutrição", "Nutrologia", "Medicina de Precisão"];
 
 export default function About() {
   return (
@@ -31,13 +31,13 @@ export default function About() {
       <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16 lg:px-10">
         <Reveal stagger>
           <span className="reveal mb-5 inline-flex items-center gap-3 text-[12px] font-semibold uppercase tracking-[0.28em] text-cyan">
-            <span className="h-px w-8 bg-cyan/60" />
+            <span className="h-px w-8 bg-cyan/70" />
             NutriGen Clinic
           </span>
-          <h2 className="reveal font-serif text-[2.35rem] font-light leading-[1.05] text-nutrigen sm:text-5xl lg:text-[4.2rem]">
+          <h2 className="reveal font-serif text-[2.35rem] font-light leading-[1.05] text-dna sm:text-5xl lg:text-[4.2rem]">
             Quem somos
           </h2>
-          <p className="reveal mt-7 max-w-md text-base leading-relaxed text-dna/82 sm:text-lg">
+          <p className="reveal mt-7 max-w-md text-base font-medium leading-relaxed text-nutrigen sm:text-lg">
             Unimos ciência, genética e acompanhamento especializado para criar
             estratégias de saúde mais precisas, sustentáveis e coerentes com o
             corpo de cada paciente.
@@ -47,7 +47,7 @@ export default function About() {
             {SPECIALTIES.map((specialty) => (
               <span
                 key={specialty}
-                className="rounded-full border border-sky/35 bg-white px-5 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-dna shadow-sm"
+                className="rounded-full border border-sky/40 bg-white px-5 py-2 text-[12px] font-bold uppercase tracking-[0.1em] text-dna shadow-sm"
               >
                 {specialty}
               </span>
@@ -62,7 +62,7 @@ export default function About() {
         </Reveal>
 
         <Reveal className="self-center" stagger>
-          <div className="reveal overflow-hidden rounded-2xl border border-softgray bg-white shadow-card">
+          <div className="reveal overflow-hidden rounded-2xl border border-sky/25 bg-white shadow-card">
             {ABOUT_ITEMS.map(({ icon: Icon, title, text }, index) => (
               <details
                 key={title}
@@ -71,18 +71,18 @@ export default function About() {
               >
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-6 py-6 sm:px-8">
                   <span className="flex items-center gap-4">
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-sky/15 ring-1 ring-sky/30">
-                      <Icon size={26} weight="thin" color="#087BB8" />
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-dna/10 to-cyan/15 ring-1 ring-sky/35">
+                      <Icon size={26} weight="thin" color="#043780" />
                     </span>
                     <span className="text-[12px] font-bold uppercase tracking-[0.2em] text-dna">
                       {title}
                     </span>
                   </span>
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-softgray text-dna transition-transform group-open:rotate-180">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-sky/30 text-nutrigen transition-transform group-open:rotate-180">
                     <CaretDown size={17} weight="bold" />
                   </span>
                 </summary>
-                <p className="px-6 pb-7 text-base leading-relaxed text-dna/78 sm:px-8">
+                <p className="px-6 pb-7 text-base leading-relaxed text-dna/85 sm:px-8">
                   {text}
                 </p>
               </details>

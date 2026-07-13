@@ -18,10 +18,10 @@ export default function WhatsAppCTA({
 }: WhatsAppCTAProps) {
   const buttonClass =
     variant === "light"
-      ? "bg-white text-nutrigen hover:scale-[1.02]"
+      ? "bg-white text-dna hover:scale-[1.02]"
       : variant === "outlineDark"
         ? "border border-mist/30 text-mist hover:border-cyan hover:text-cyan"
-        : "bg-cyan text-white hover:scale-[1.02]";
+        : "bg-gradient-to-r from-dna to-nutrigen text-white hover:from-nutrigen hover:to-cyan hover:scale-[1.02]";
 
   return (
     <div
