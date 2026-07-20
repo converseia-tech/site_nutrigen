@@ -42,7 +42,7 @@ const CARDS = [
   {
     icon: Pill,
     title: "Suplementação Personalizada",
-    text: "Orientação baseada na sua avaliação — sem escolhas aleatórias.",
+    text: "Orientação baseada na sua avaliação, sem escolhas aleatórias.",
     cta: "Ver opções de suplementação personalizada",
   },
   {
@@ -69,7 +69,7 @@ export default function Procedures() {
   return (
     <section
       id="testes"
-      className="bg-gradient-to-b from-mist via-mist to-white py-20 sm:py-24 lg:py-32"
+      className="bg-gradient-to-b from-mist via-mist to-white py-14 sm:py-24 lg:py-32"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid items-stretch gap-10 lg:grid-cols-2 lg:gap-16">
@@ -94,9 +94,9 @@ export default function Procedures() {
           <Reveal className="h-full min-h-[320px]" y={48}>
             <SideImage
               src={ASSETS.precisionMedicine}
-              alt="Mulher em treino — saúde integrada e performance"
+              alt="Prática de yoga e bem-estar para saúde integrada"
               quality={96}
-              objectPosition="center 30%"
+              objectPosition="center 35%"
               sizes="(max-width: 1024px) 90vw, 620px"
               matchTextHeight
               className="lg:min-h-[380px]"
@@ -165,9 +165,9 @@ export default function Procedures() {
                 Onde fazer teste genético em Recife?
               </p>
               <p className="mt-2 max-w-xl text-sm text-white/85">
-                Se você procura um teste genético em Recife, a NutriGen oferece
-                uma abordagem diferente: não entregamos apenas um exame —
-                acompanhamos toda a jornada até o plano personalizado.
+                Se você procura um teste genético em Recife, a NutriGen
+                oferece uma abordagem diferente: não entregamos apenas um
+                exame, acompanhamos toda a jornada até o plano personalizado.
               </p>
               <a
                 href={whatsappUrl(

@@ -7,7 +7,7 @@ import { CONTACT, PHONE_DISPLAY, PHONE_E164, whatsappUrl } from "@/lib/site";
 
 export default function Location() {
   return (
-    <section id="agendamento" className="bg-mist py-20 sm:py-24 lg:py-32">
+    <section id="agendamento" className="bg-mist py-14 sm:py-24 lg:py-32">
       <div className="mx-auto grid max-w-7xl items-stretch gap-10 px-6 sm:gap-12 lg:grid-cols-2 lg:gap-16 lg:px-10">
         <Reveal className="flex flex-col justify-center" stagger>
           <span className="reveal mb-5 inline-block text-[12px] font-semibold uppercase tracking-[0.28em] text-cyan">
@@ -18,9 +18,9 @@ export default function Location() {
             como utilizá-las.
           </h2>
           <p className="reveal mt-6 max-w-xl text-base font-medium leading-relaxed text-nutrigen">
-            Na NutriGen, o teste genético é o primeiro passo para uma estratégia
-            personalizada de saúde — com ciência, tecnologia e acompanhamento
-            profissional.
+            Na NutriGen, o teste genético é o primeiro passo para uma
+            estratégia personalizada de saúde, com ciência, tecnologia e
+            acompanhamento profissional.
           </p>
           <p className="reveal mt-4 max-w-xl text-base leading-relaxed text-dna/90">
             Atendimento presencial em Recife: da avaliação inicial à
@@ -87,7 +87,7 @@ export default function Location() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
-            className="reveal mt-10 inline-flex w-full animate-pulseSoft items-center justify-center gap-3 rounded-full bg-gradient-to-r from-dna to-nutrigen px-7 py-4 text-center text-[13px] font-bold uppercase tracking-[0.06em] text-white shadow-float hover:from-nutrigen hover:to-cyan sm:w-auto sm:px-8 sm:text-sm sm:tracking-[0.08em]"
+            className="reveal mt-10 inline-flex w-full animate-pulseSoft items-center justify-center gap-2 rounded-full bg-gradient-to-r from-dna to-nutrigen px-5 py-3.5 text-center text-[12px] font-bold uppercase tracking-[0.02em] text-white shadow-float hover:from-nutrigen hover:to-cyan sm:w-auto sm:gap-3 sm:px-8 sm:py-4 sm:text-sm sm:tracking-[0.08em]"
           >
             <WhatsappLogo size={22} weight="fill" />
             Agendar meu teste genético em Recife

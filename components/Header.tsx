@@ -66,10 +66,10 @@ export default function Header() {
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
-            className="text-mist lg:hidden"
+            className="-m-2 flex h-11 w-11 items-center justify-center text-mist lg:hidden"
             aria-label={open ? "Fechar menu" : "Abrir menu"}
           >
-            {open ? <X size={28} weight="thin" /> : <List size={28} weight="thin" />}
+            {open ? <X size={26} weight="thin" /> : <List size={26} weight="thin" />}
           </button>
         </div>
       </div>

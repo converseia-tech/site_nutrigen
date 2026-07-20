@@ -31,7 +31,7 @@ export default function WhatsAppCTA({
         href={whatsappUrl(message)}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-flex w-full items-center justify-center gap-3 rounded-full px-7 py-4 text-[13px] font-bold uppercase tracking-[0.06em] shadow-float transition-transform sm:w-auto ${buttonClass}`}
+        className={`inline-flex w-full items-center justify-center gap-2 rounded-full px-5 py-3.5 text-[12px] font-bold uppercase tracking-[0.02em] shadow-float transition-transform sm:w-auto sm:gap-3 sm:px-7 sm:py-4 sm:text-[13px] sm:tracking-[0.06em] ${buttonClass}`}
       >
         {label}
         <ArrowRight size={19} weight="bold" />

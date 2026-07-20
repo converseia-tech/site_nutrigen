@@ -7,17 +7,15 @@ import { Check } from "@phosphor-icons/react/dist/ssr";
 const PAIN_POINTS = [
   "Dietas e suplementos sem saber se fazem sentido para o seu organismo.",
   "Recomendações genéricas da internet que ignoram o seu DNA.",
-  "Características genéticas únicas que influenciam metabolismo e absorção de nutrientes.",
-  "Resposta individual ao exercício e predisposição a deficiências nutricionais.",
+  "Características genéticas únicas que influenciam metabolismo, absorção de nutrientes e resposta ao exercício.",
   "Decisões de saúde ainda tomadas por tentativa e erro.",
-  "Falta de uma leitura integrada entre genética, exames e rotina.",
 ];
 
 export default function Manifesto() {
   return (
     <section
       id="problema"
-      className="bg-gradient-to-b from-mist via-mist to-white py-20 sm:py-24 lg:py-32"
+      className="bg-gradient-to-b from-mist via-mist to-white py-14 sm:py-24 lg:py-32"
     >
       <div className="mx-auto grid max-w-7xl items-stretch gap-10 px-6 sm:gap-12 lg:grid-cols-12 lg:gap-16 lg:px-10">
         <Reveal className="h-full min-h-[320px] lg:col-span-6 lg:min-h-0" y={48}>

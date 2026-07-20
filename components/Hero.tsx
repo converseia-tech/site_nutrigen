@@ -127,7 +127,7 @@ export default function Hero() {
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               transition={{ type: "spring", stiffness: 320, damping: 18 }}
-              className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-dna to-nutrigen px-7 py-4 text-[13px] font-bold uppercase tracking-[0.06em] text-white shadow-float hover:from-nutrigen hover:to-cyan sm:w-auto sm:text-sm"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-dna to-nutrigen px-5 py-3.5 text-[12px] font-bold uppercase tracking-[0.02em] text-white shadow-float hover:from-nutrigen hover:to-cyan sm:w-auto sm:gap-3 sm:px-7 sm:py-4 sm:text-sm sm:tracking-[0.06em]"
             >
               Quero agendar minha avaliação
               <ArrowRight size={20} weight="bold" />
@@ -147,7 +147,7 @@ export default function Hero() {
         <div ref={imageRef} className="relative mx-auto w-full max-w-md lg:max-w-none">
           <SideImage
             src={ASSETS.hero}
-            alt="Mulher em rotina de vida saudável — bem-estar e longevidade"
+            alt="Mulher em rotina de vida saudável, bem-estar e longevidade"
             priority
             quality={95}
             objectPosition="center 42%"

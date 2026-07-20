@@ -62,8 +62,8 @@ export default function Home() {
         <SocialProof />
         <Method />
         <Differentials />
-        <Procedures />
         <About />
+        <Procedures />
         <ScientificAuthority />
         <FAQ />
         <Location />

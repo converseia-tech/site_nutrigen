@@ -56,29 +56,11 @@ const PANELS = [
   },
 ];
 
-const PRODUCT_SLIDES = [
-  {
-    src: ASSETS.productFood,
-    alt: "Performance e vitalidade — rotina de saúde personalizada",
-    objectPosition: "center 30%",
-  },
-  {
-    src: ASSETS.productExercise,
-    alt: "Mulher em treino de performance e alongamento",
-    objectPosition: "center 20%",
-  },
-  {
-    src: ASSETS.geneticMapping,
-    alt: "Hélice de DNA — mapeamento genético",
-    objectPosition: "center",
-  },
-];
-
 export default function ProductOverview() {
   return (
     <section
       id="produto"
-      className="bg-gradient-to-b from-mist via-white to-white py-20 sm:py-24 lg:py-32"
+      className="bg-gradient-to-b from-mist via-white to-white py-14 sm:py-24 lg:py-32"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid items-stretch gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:gap-16">
@@ -132,8 +114,10 @@ export default function ProductOverview() {
 
           <Reveal className="h-full min-h-[360px]" y={48}>
             <SideImage
-              slides={PRODUCT_SLIDES}
+              src={ASSETS.geneticMapping}
+              alt="Hélice de DNA no mapeamento genético"
               quality={96}
+              objectPosition="center"
               sizes="(max-width: 1024px) 88vw, 560px"
               matchTextHeight
               className="lg:min-h-[480px]"

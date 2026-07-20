@@ -10,20 +10,26 @@ type Block = {
 
 const BLOCKS: Block[] = [
   {
-    title: "Vozes da Autoridade — NutriGen Convida",
+    title: "Vozes da Autoridade: NutriGen Convida",
     subtitle: "Especialistas sobre genética e epigenética aplicada",
     items: [
       {
-        label: "Como a Genética Muda Vidas",
-        url: "https://www.instagram.com/reel/DRvDLl2kWim/",
+        label: "Glúten e o Corpo",
+        url: "https://www.instagram.com/p/DQ4_Wjrj-b9/",
         caption:
-          "Dra. Renata Martins detalha a aplicação prática do mapeamento genético na individualização dos tratamentos.",
+          "Dr. Fábio Menezes, gastroenterologista, explica os efeitos do glúten sobre o nosso organismo.",
       },
       {
-        label: "Bem-estar e Epigenética",
-        url: "https://www.instagram.com/reel/DN03Oe54vNZ/",
+        label: "Saúde da Tireoide",
+        url: "https://www.instagram.com/p/DNjjvMSMmTj/",
         caption:
-          "Maria Pimentel discute como o controle ambiental e os hábitos moldam a expressão dos nossos genes.",
+          "Dr. Leonardo Bandeira fala sobre a tireoide, uma glândula essencial para a saúde do corpo todo.",
+      },
+      {
+        label: "Saúde Intestinal",
+        url: "https://www.instagram.com/p/DM8zm4JMgVh/",
+        caption:
+          "Dr. Marco Saturnino, cirurgião colorretal, mostra como alimentação e hábitos impactam diretamente a saúde intestinal.",
       },
     ],
   },
@@ -33,7 +39,7 @@ export default function ScientificAuthority() {
   return (
     <section
       id="autoridade"
-      className="bg-white py-20 sm:py-24 lg:py-32"
+      className="bg-white py-14 sm:py-24 lg:py-32"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal className="mx-auto max-w-3xl text-center" stagger>
@@ -61,7 +67,7 @@ export default function ScientificAuthority() {
             </Reveal>
 
             <Reveal
-              className="mx-auto grid max-w-4xl grid-cols-1 gap-6 sm:gap-7 md:grid-cols-2"
+              className="mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:gap-7 md:grid-cols-2 lg:grid-cols-3"
               stagger
             >
               {block.items.map((item) => (

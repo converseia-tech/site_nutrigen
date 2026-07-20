@@ -11,7 +11,7 @@ const ABOUT_ITEMS = [
   {
     icon: Sparkle,
     title: "O Que Fazemos",
-    text: "Utilizamos o teste genético como ferramenta clínica — sempre com interpretação profissional — para orientar alimentação, suplementação, prevenção e qualidade de vida.",
+    text: "Utilizamos o teste genético como ferramenta clínica, sempre com interpretação profissional, para orientar alimentação, suplementação, prevenção e qualidade de vida.",
   },
   {
     icon: Heartbeat,
@@ -20,13 +20,13 @@ const ABOUT_ITEMS = [
   },
 ];
 
-const SPECIALTIES = ["Nutrição", "Nutrologia", "Medicina de Precisão"];
+const SPECIALTIES = ["Nutrição", "Nutrologia", "Medicina de Precisão", "Endocrinologia", "Gastroenterologia"];
 
 export default function About() {
   return (
     <section
       id="quem-somos"
-      className="relative overflow-hidden bg-gradient-to-b from-white via-mist to-white py-20 sm:py-24 lg:py-32"
+      className="relative overflow-hidden bg-gradient-to-b from-white via-mist to-white py-14 sm:py-24 lg:py-32"
     >
       <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16 lg:px-10">
         <Reveal stagger>

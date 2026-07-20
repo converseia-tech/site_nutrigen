@@ -49,8 +49,9 @@ export default function Footer() {
           <div className="mt-10 h-px w-full max-w-md bg-mist/15" />
 
           <p className="mt-8 max-w-2xl text-sm leading-relaxed text-mist/70">
-            NutriGen Clinic — teste genético em Recife, medicina de precisão,
-            nutrição personalizada e longevidade com interpretação profissional.
+            A NutriGen Clinic oferece teste genético em Recife, medicina de
+            precisão, nutrição personalizada e longevidade com interpretação
+            profissional.
           </p>
           <p className="mt-4 max-w-2xl text-xs leading-relaxed text-mist/55">
             {CONTACT.address}

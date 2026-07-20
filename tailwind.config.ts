@@ -17,8 +17,8 @@ const config: Config = {
         softgray: "#DADADA", // Cinza Suave – divisórias e sombras
       },
       fontFamily: {
-        serif: ["var(--font-cormorant)", "Cormorant Garamond", "serif"],
-        sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
+        serif: ["var(--font-quicksand)", "Quicksand", "sans-serif"],
+        sans: ["var(--font-quicksand)", "Quicksand", "system-ui", "sans-serif"],
       },
       letterSpacing: {
         luxe: "0.04em",

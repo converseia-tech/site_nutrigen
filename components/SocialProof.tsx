@@ -6,19 +6,17 @@ import { CheckCircle } from "@phosphor-icons/react/dist/ssr";
 
 const INDICATED_FOR = [
   "Emagrecer com estratégia",
-  "Melhorar a alimentação",
-  "Descobrir quais suplementos realmente precisam",
-  "Melhorar desempenho esportivo",
-  "Cuidar da saúde de forma preventiva",
-  "Investir em longevidade",
   "Entender melhor seu metabolismo",
+  "Descobrir quais suplementos realmente precisam",
+  "Investir em prevenção e longevidade",
+  "Melhorar desempenho esportivo",
 ];
 
 export default function SocialProof() {
   return (
     <section
       id="prova"
-      className="bg-gradient-to-b from-white via-white to-mist py-20 sm:py-24 lg:py-32"
+      className="bg-gradient-to-b from-white via-white to-mist py-14 sm:py-24 lg:py-32"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid items-stretch gap-10 lg:grid-cols-2 lg:gap-16">
@@ -60,7 +58,7 @@ export default function SocialProof() {
               src={ASSETS.practices[0]}
               alt="Mulher em treino de fortalecimento e performance"
               quality={96}
-              objectPosition="center 28%"
+              objectPosition="center 8%"
               sizes="(max-width: 1024px) 90vw, 600px"
               matchTextHeight
               className="lg:min-h-[480px]"

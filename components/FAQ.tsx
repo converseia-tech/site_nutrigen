@@ -4,7 +4,7 @@ import { FAQS } from "@/lib/site";
 
 export default function FAQ() {
   return (
-    <section id="duvidas" className="bg-white py-20 sm:py-24 lg:py-32">
+    <section id="duvidas" className="bg-white py-14 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-5xl px-6 lg:px-10">
         <Reveal className="mx-auto max-w-3xl text-center" stagger>
           <span className="reveal mb-5 inline-block text-[12px] font-semibold uppercase tracking-[0.28em] text-cyan">

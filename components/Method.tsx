@@ -1,7 +1,5 @@
-import SideImage from "./SideImage";
 import Reveal from "./Reveal";
 import WhatsAppCTA from "./WhatsAppCTA";
-import { ASSETS } from "@/lib/site";
 import {
   CalendarCheck,
   ChartLineUp,
@@ -44,19 +42,11 @@ const PILLARS = [
   },
 ];
 
-const HIGHLIGHTS = [
-  "Metabolismo",
-  "Nutrientes",
-  "Hábitos",
-  "Intestino",
-  "Longevidade",
-];
-
 export default function Method() {
   return (
     <section
       id="metodo"
-      className="bg-gradient-to-b from-white via-white to-mist py-20 sm:py-24 lg:py-32"
+      className="bg-gradient-to-b from-white via-white to-mist py-14 sm:py-24 lg:py-32"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal className="mx-auto max-w-3xl text-center" stagger>
@@ -65,52 +55,12 @@ export default function Method() {
             Como funciona
           </span>
           <h2 className="reveal font-serif text-3xl font-light leading-tight text-dna sm:text-4xl lg:text-[2.9rem]">
-            Como funciona o teste genético na NutriGen?
+            COMO É FEITO O TESTE NUTRIGENÉTICO NA NUTRIGEN?
           </h2>
           <p className="reveal mx-auto mt-6 max-w-xl text-base font-medium leading-relaxed text-nutrigen">
-            Um processo claro, da avaliação inicial ao plano personalizado —
+            Um processo claro, da avaliação inicial ao plano personalizado,
             com interpretação profissional em cada etapa.
           </p>
-        </Reveal>
-
-        <Reveal className="mt-12 sm:mt-16" y={56}>
-          <div className="relative overflow-hidden rounded-[2rem] shadow-card ring-1 ring-dna/30">
-            <SideImage
-              src={ASSETS.geneticMapping}
-              alt="Hélice de DNA — mapeamento genético de precisão"
-              sizes="(max-width: 1024px) 92vw, 1200px"
-              matchTextHeight={false}
-              className="aspect-[16/10] min-h-0 rounded-none shadow-none ring-0 sm:aspect-[21/9]"
-            />
-            {/* Camadas de contraste: base escura + vinheta lateral + glow ciano */}
-            <div className="pointer-events-none absolute inset-0 bg-dna/55" />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-dna via-dna/90 to-dna/35" />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-dna/70 via-transparent to-dna/25" />
-            <div className="pointer-events-none absolute -left-8 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-cyan/15 blur-3xl" />
-
-            <div className="absolute inset-0 flex flex-col justify-center px-7 py-8 sm:px-12 lg:px-16">
-              <div className="max-w-xl rounded-2xl border border-white/15 bg-dna/35 p-5 shadow-[0_12px_40px_-12px_rgba(4,55,128,0.55)] backdrop-blur-md sm:p-7">
-                <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-cyan/40 bg-cyan/20 px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-white shadow-sm sm:text-[11px]">
-                  <Dna size={16} weight="bold" color="#FFFFFF" />
-                  O seu DNA é o mapa
-                </span>
-                <h3 className="font-serif text-2xl font-medium leading-[1.15] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)] sm:text-3xl lg:text-4xl">
-                  O teste genético analisa pequenas variações no seu DNA que
-                  ajudam a entender como seu organismo funciona.
-                </h3>
-                <ul className="mt-6 flex flex-wrap gap-2.5">
-                  {HIGHLIGHTS.map((h) => (
-                    <li
-                      key={h}
-                      className="rounded-full border border-white/35 bg-white/15 px-3.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.1em] text-white shadow-sm backdrop-blur-sm sm:text-xs"
-                    >
-                      {h}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
         </Reveal>
 
         <Reveal

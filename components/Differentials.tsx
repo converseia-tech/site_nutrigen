@@ -43,7 +43,7 @@ const DIFFERENTIALS = [
 
 export default function Differentials() {
   return (
-    <section className="bg-mist py-20 sm:py-24 lg:py-32">
+    <section className="bg-mist py-14 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal className="mx-auto max-w-3xl text-center" stagger>
           <span className="reveal mb-5 inline-block text-[12px] font-semibold uppercase tracking-[0.28em] text-cyan">
