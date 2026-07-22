@@ -67,16 +67,17 @@ export default function ScientificAuthority() {
             </Reveal>
 
             <Reveal
-              className="mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:gap-7 md:grid-cols-2 lg:grid-cols-3"
+              className="no-scrollbar -mx-6 flex max-w-6xl snap-x snap-mandatory gap-6 overflow-x-auto px-6 pb-2 sm:gap-7 md:mx-auto md:grid md:grid-cols-2 md:overflow-visible md:px-0 md:pb-0 lg:grid-cols-3"
               stagger
             >
               {block.items.map((item) => (
-                <InstagramEmbed
-                  key={item.url}
-                  url={item.url}
-                  label={item.label}
-                  caption={item.caption}
-                />
+                <div key={item.url} className="w-[86%] shrink-0 snap-start md:w-auto md:shrink">
+                  <InstagramEmbed
+                    url={item.url}
+                    label={item.label}
+                    caption={item.caption}
+                  />
+                </div>
               ))}
             </Reveal>
           </div>

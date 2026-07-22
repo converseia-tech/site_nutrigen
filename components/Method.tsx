@@ -64,13 +64,13 @@ export default function Method() {
         </Reveal>
 
         <Reveal
-          className="mt-10 grid gap-5 sm:mt-12 sm:gap-6 md:grid-cols-2 lg:grid-cols-5"
+          className="no-scrollbar -mx-6 mt-10 flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-2 sm:mt-12 sm:gap-6 md:mx-0 md:grid md:grid-cols-2 md:overflow-visible md:px-0 md:pb-0 lg:grid-cols-5"
           stagger
         >
           {PILLARS.map(({ icon: Icon, step, title, text }) => (
             <article
               key={step}
-              className="reveal group relative flex flex-col rounded-2xl border border-sky/25 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan hover:shadow-card"
+              className="reveal group relative flex w-[72%] shrink-0 snap-start flex-col rounded-2xl border border-sky/25 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan hover:shadow-card md:w-auto md:shrink"
             >
               <span className="font-serif text-4xl font-light text-sky/70">
                 {step}

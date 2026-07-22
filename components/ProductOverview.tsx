@@ -132,13 +132,13 @@ export default function ProductOverview() {
         </Reveal>
 
         <Reveal
-          className="mt-8 grid gap-5 sm:mt-10 md:grid-cols-2 lg:grid-cols-4"
+          className="no-scrollbar -mx-6 mt-8 flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-2 sm:mt-10 md:mx-0 md:grid md:grid-cols-2 md:overflow-visible md:px-0 md:pb-0 lg:grid-cols-4"
           stagger
         >
           {PANELS.map(({ icon: Icon, title, text }) => (
             <article
               key={title}
-              className="reveal rounded-2xl border border-sky/25 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-cyan hover:shadow-card"
+              className="reveal w-[72%] shrink-0 snap-start rounded-2xl border border-sky/25 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-cyan hover:shadow-card md:w-auto md:shrink"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-dna/10 to-cyan/15 shadow-sm ring-1 ring-sky/30">
                 <Icon size={26} weight="thin" color="#043780" />

@@ -105,7 +105,7 @@ export default function Procedures() {
         </div>
 
         <Reveal
-          className="mt-14 grid grid-cols-1 gap-6 sm:mt-20 sm:gap-8 md:grid-cols-2 lg:grid-cols-4"
+          className="no-scrollbar -mx-6 mt-14 flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-2 sm:mt-20 sm:gap-8 md:mx-0 md:grid md:grid-cols-2 md:overflow-visible md:px-0 md:pb-0 lg:grid-cols-4"
           stagger
         >
           {CARDS.map(({ icon: Icon, title, text, cta }) => (
@@ -114,7 +114,7 @@ export default function Procedures() {
               id={
                 title === "Mapeamento Nutrigenético" ? "especialidades" : undefined
               }
-              className="reveal group relative flex flex-col overflow-hidden rounded-2xl border border-sky/25 bg-clinical p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan hover:shadow-card"
+              className="reveal group relative flex w-[78%] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-sky/25 bg-clinical p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan hover:shadow-card md:w-auto md:shrink"
             >
               <Image
                 src={ASSETS.logoColor}
