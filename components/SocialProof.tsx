@@ -53,7 +53,7 @@ export default function SocialProof() {
             />
           </Reveal>
 
-          <Reveal className="h-full min-h-[360px]" y={48}>
+          <Reveal y={48}>
             <SideImage
               src={ASSETS.practices[0]}
               alt="Mulher em treino de fortalecimento e performance"
@@ -61,6 +61,7 @@ export default function SocialProof() {
               objectPosition="center 8%"
               sizes="(max-width: 1024px) 90vw, 600px"
               matchTextHeight
+              aspect="aspect-[4/5]"
               className="lg:min-h-[480px]"
             />
           </Reveal>

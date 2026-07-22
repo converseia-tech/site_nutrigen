@@ -18,7 +18,7 @@ export default function Manifesto() {
       className="bg-gradient-to-b from-mist via-mist to-white py-14 sm:py-24 lg:py-32"
     >
       <div className="mx-auto grid max-w-7xl items-stretch gap-10 px-6 sm:gap-12 lg:grid-cols-12 lg:gap-16 lg:px-10">
-        <Reveal className="h-full min-h-[320px] lg:col-span-6 lg:min-h-0" y={48}>
+        <Reveal className="lg:col-span-6" y={48}>
           <SideImage
             src={ASSETS.manifesto}
             alt="Mulher correndo sorrindo em rotina de saúde e bem-estar"
@@ -26,7 +26,7 @@ export default function Manifesto() {
             objectPosition="center 45%"
             sizes="(max-width: 1024px) 90vw, 620px"
             matchTextHeight
-            className="h-full min-h-[320px] lg:min-h-full"
+            className="lg:min-h-full"
           />
         </Reveal>
 

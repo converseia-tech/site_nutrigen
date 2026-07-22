@@ -112,7 +112,7 @@ export default function ProductOverview() {
             />
           </Reveal>
 
-          <Reveal className="h-full min-h-[360px]" y={48}>
+          <Reveal y={48}>
             <SideImage
               src={ASSETS.geneticMapping}
               alt="Hélice de DNA no mapeamento genético"

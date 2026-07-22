@@ -16,6 +16,14 @@ type SideImageProps = {
   /** Match text column height on large screens */
   matchTextHeight?: boolean;
   priority?: boolean;
+  /**
+   * Fixed crop ratio below the lg breakpoint (Tailwind aspect-[w/h] class).
+   * Keeps framing consistent across every mobile/tablet width instead of a
+   * fixed pixel height, whose effective ratio — and therefore crop — shifted
+   * with viewport width. Defaults to 4:3, a good fit for the landscape
+   * source photos used across the site; portrait photos should override.
+   */
+  aspect?: string;
 };
 
 /**
@@ -32,9 +40,10 @@ export default function SideImage({
   className = "",
   matchTextHeight = true,
   priority = false,
+  aspect = "aspect-[4/3]",
 }: SideImageProps) {
   const shell = matchTextHeight
-    ? "h-full w-full min-h-[260px] sm:min-h-[320px]"
+    ? `w-full ${aspect} lg:aspect-auto lg:h-full`
     : "relative w-full min-h-[280px]";
 
   if (slides && slides.length > 1) {

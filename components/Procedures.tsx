@@ -91,12 +91,12 @@ export default function Procedures() {
             </p>
           </Reveal>
 
-          <Reveal className="h-full min-h-[320px]" y={48}>
+          <Reveal y={48}>
             <SideImage
               src={ASSETS.precisionMedicine}
               alt="Prática de yoga e bem-estar para saúde integrada"
               quality={96}
-              objectPosition="center 35%"
+              objectPosition="center 30%"
               sizes="(max-width: 1024px) 90vw, 620px"
               matchTextHeight
               className="lg:min-h-[380px]"
